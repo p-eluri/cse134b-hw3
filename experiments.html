@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Experiments | Personal Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Experiments</h1>
+        <p>Exploring different HTML elements.</p>
+    </header>
+
+    <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="coursework.html">Coursework</a>
+        <a href="interests.html">Interests</a>
+        <a href="skills.html">Skills &amp; Goals</a>
+        <a href="contact.html">Contact</a>
+        <a href="experiments.html">Experiments</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>Audio Experiment</h2>
+            <p>
+                Testing the HTML audio element with
+                browser playback controls.
+            </p>
+
+            <audio controls>
+                <source src="assets/sample.mp3"
+                        type="audio/mpeg">
+                Your browser does not support audio.
+            </audio>
+        </section>
+
+        <section>
+            <h2>Video Experiment</h2>
+            <p>
+                Testing the HTML video element with
+                browser playback controls.
+            </p>
+
+            <video controls width="320">
+                <source src="assets/sample.mp4"
+                        type="video/mp4">
+                Your browser does not support video.
+            </video>
+        </section>
+
+        <section>
+            <h2>Canvas Experiment</h2>
+            <p>
+                The canvas below demonstrates basic
+                drawing using a small JavaScript example.
+            </p>
+
+            <canvas id="demo-canvas" width="300"
+                    height="150">
+                Your browser does not support canvas.
+            </canvas>
+
+<noscript>
+    <p>
+        JavaScript is disabled in your browser.
+        The canvas drawing cannot be displayed.
+    </p>
+</noscript>
+
+            <script>
+                const canvas =
+                    document.getElementById("demo-canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.fillStyle = "blue";
+                ctx.fillRect(20, 20, 150, 75);
+            </script>
+        </section>
+
+        <section>
+            <h2>Template Experiment</h2>
+            <p>
+                This template contains HTML that is
+                stored but not displayed on the page.
+            </p>
+
+            <template id="sample-template">
+                <article>
+                    <h3>Template Content</h3>
+                    <p>
+                        This content is inside a
+                        template element.
+                    </p>
+                </article>
+            </template>
+        </section>
+    </main>
+
+    <footer>
+        <p>Personal Portfolio | UCSD Student</p>
+    </footer>
+</body>
+</html>
+
