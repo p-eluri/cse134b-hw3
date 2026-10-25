@@ -1,0 +1,60 @@
+/*
+Name: Pranav Sai Eluri
+Repository: https://github.com/p-eluri/cse134b-hw3
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+    background-color: lightyellow;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+.latin {
+    font-style: italic;
+}
+
+#warning {
+    background-color: lightcoral;
+}
+
+blockquote {
+    border-left: 4px solid darkgoldenrod;
+    margin: 20px 0;
+    padding: 15px;
+}
+
+a:hover {
+    color: darkred;
+    text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+button:focus {
+    outline: 3px solid darkblue;
+    outline-offset: 3px;
+}
+
+/* Both rules target h2 and set its color.
+   The second rule wins because it appears later
+   in the stylesheet with equal specificity. */
+
+h2 {
+    color: darkred;
+}
+
+h2 {
+    color: darkgreen;
+}
