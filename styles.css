@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #234a70;
+    --background-color: #f5f7fa;
+    --text-color: #263238;
+    --font-stack: Arial, Helvetica, sans-serif;
+    --content-width: 1000px;
+}
+body {
+    font-family: var(--font-stack);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    margin: 0;
+}
+
+main {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+h2 {
+    font-size: 1.65rem;
+    color: var(--primary-color);
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+nav a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+student-note {
+    display: block;
+    border: 1px solid black;
+}
+
+button {
+    padding: 0.5em 1em;
+}
