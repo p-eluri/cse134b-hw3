@@ -5,12 +5,12 @@ Repository: https://github.com/p-eluri/cse134b-hw3
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    color: #333333;
+    color: white;
     line-height: 1.6;
-    background-color: lightyellow;
-    max-width: 900px;
+    background-color: darkblue;
+    max-width: 875px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
 }
 
 h1 {
@@ -27,34 +27,40 @@ h2 {
 
 #warning {
     background-color: lightcoral;
+    color: #222222;
 }
 
 blockquote {
     border-left: 4px solid darkgoldenrod;
     margin: 20px 0;
-    padding: 15px;
+    padding: 20px;
+}
+
+a {
+    color: lightskyblue; 
 }
 
 a:hover {
-    color: darkred;
+    color: lightpink;
     text-decoration: underline;
 }
 
 a:focus,
 input:focus,
 button:focus {
-    outline: 3px solid darkblue;
+    outline: 3px solid lightgoldenrodyellow;
     outline-offset: 3px;
 }
 
-/* Both rules target h2 and set its color.
-   The second rule wins because it appears later
-   in the stylesheet with equal specificity. */
+/* These rules determine h2's color. 
+   The one at the bottom occurs after the first one,
+   so that is the rule that applies on the website on the browser. This 
+   is as a tie-breaker, essentially, because they both have the same specificity */
 
 h2 {
-    color: darkred;
+    color: lightyellow;
 }
 
 h2 {
-    color: darkgreen;
+    color: lightskyblue;
 }
